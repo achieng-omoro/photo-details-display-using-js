@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>memorable days</title>
+  </head>
+  <script>
+  function display(element){
+    document.getElementById('image').innerHTML = element.alt;
+  }
+  function revert(){
+    document.getElementById('image').innerHTML = "Hover over an image to display details.";
+  }
+ </script>
+  <style>
+  #image{
+      width: 812px;
+      height: 70px;
+      border:5px solid pink;
+      background-color: black;
+      background-repeat: no-repeat;
+      color:white;
+      background-size: 100%;
+      font-family: Didot;
+      font-size: 150%;
+      line-height: 60px;
+      text-align: center;
+      align-self: center;
+      
+  }
+  img{
+  width: 200px;
+  height: 200px;
+  
+  }
+  .main{
+    padding-top: 30px;
+    padding-left: 300px;
+  }
+  </style>
+  <body>
+    <div class="main">
+    <p id = "image">Hover over an image to display details.<p>
+    <img alt = "Bsc at makerere university" src = "https://pearltimes.co.ug/wp-content/uploads/2020/12/Makerere-University-students..jpg" onmouseover = "display(this)" onmouseout = "revert()">
+    <img alt = "masters graduation at stanford university, USA" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9aLzPltKRtXHI3D20PQi7gBm4iyLJ4K9ESQ&usqp=CAU" onmouseover = "display(this)" onmouseout = "revert()">
+    <img alt = "courtesy call on kenya's president" src = "https://blog.lsk.or.ke/wp-content/uploads/2020/08/IMG_0205-1024x522.jpg" onmouseover = "display(this)" onmouseout = "revert()">
+    <img alt = "loss of dad" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnVvCqp7Bq4fjKjlTpCrjt5oyk6kBCQJjzg&usqp=CAU" onmouseover = "display(this)" onmouseout = "revert()">
+    </div>
+  </body>
+</html>
